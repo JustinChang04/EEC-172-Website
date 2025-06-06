@@ -17,7 +17,7 @@ export default function Implementation() {
                     description="The IR remote and receiver allow the user to log in to the menu on the system board, preventing unauthorized access of the system"/>
                 <Box
                     title="Menu UI" 
-                    description="The menu UI on the system board allows displays the arming state and buzzer state. The user uses IR control to toggle states and switch between the arming and buzzer options."/>
+                    description="The menu UI on the system board displays the arming state and buzzer state. The user uses IR control to toggle states and switch between the arming and buzzer options."/>
                 <Box
                     title="AWS Arming State"
                     description="When the user presses send on the control board, the board updates systems arming state via a POST request to AWS. The alarm board periodically updates its arming state via a GET request from the same AWS endpoint."
@@ -26,7 +26,7 @@ export default function Implementation() {
             <div className="w-full h-[55%] flex flex-row justify-start space-x-10">
                 <Box
                     title="Accelerometer"
-                    description="The alarm system interacts with the the onboard accelerometer over I2C. When armed, the board triggers the alarm when the accelerometer magnitude reaches a certain threshold."/>
+                    description="The alarm system interacts with the onboard accelerometer over I2C. When armed, the board triggers the alarm when the accelerometer magnitude reaches a certain threshold."/>
                 <Box
                     title="AWS Alarm"
                     description="In the armed state, upon triggering the alarm, the alarm board will send a notification to an AWS device shadow that sends an SNS notification to the user's email."/>
